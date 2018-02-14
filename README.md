@@ -7,5 +7,6 @@ This is basically just a merged version of these images:
 The only change is that `borg` gets installed via the latest release from GitHub instead of using pip because otherwise with the missing native msgpack, performance is < 0.
 
 Use `make build` and `make run` to start a dockerized borg instance. Please check the `Makefile` for things you have to configure.
+You can also use the built image from docker hub using `docker pull bananafett/borg-docker` :)
 
 All credits go to sebcworks :)
