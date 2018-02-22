@@ -4,5 +4,5 @@ services:
   - docker
 
 script:
-  - docker build -t bananafett/borg .
+  - docker build -t bananafett/borg-docker .
   - docker images
