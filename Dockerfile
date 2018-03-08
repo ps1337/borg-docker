@@ -35,7 +35,7 @@ RUN usermod -p '*' borg
 
 # Install Borg
 WORKDIR /tmp
-RUN curl https://api.github.com/repos/borgbackup/borg/releases/latest | grep "browser_download_url" | grep $ARCH | grep -v ".asc" | cut -d : -f 2,3 | tr -d \" | wget -i -
+RUN curl https://api.github.com/repos/borgbackup/borg/releases/latest | grep "browser_download_url" | grep $ARCH | grep -v ".asc" | cut -d : -f 2,3 | tr -d "\" " | wget -i -
 RUN mv borg* /usr/local/bin/borg && chown root:root /usr/local/bin/borg && chmod 755 /usr/local/bin/borg
 
 COPY entrypoint.sh /entrypoint.sh
