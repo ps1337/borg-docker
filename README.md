@@ -1,6 +1,6 @@
 # A dockerized Borg server
 
-[![Build Status](https://travis-ci.org/0xBANANA/borg-docker.png?branch=master)](https://travis-ci.org/0xBANANA/borg-docker)
+[![Build Status](https://travis-ci.org/ps1337/borg-docker.png?branch=master)](https://travis-ci.org/ps1337/borg-docker)
 
 This repo contains two variants of a dockerized borg server
 
